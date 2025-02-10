@@ -1,4 +1,4 @@
-class Solution {
+class Solution3 {
     public void nextPermutation(int[] nums) {
         int l=nums.length;
         int end=l-2;
