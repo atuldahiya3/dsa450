@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 class Solution {
     public long maximumSubarraySum(int[] nums, int k) {
         long sum=0;
