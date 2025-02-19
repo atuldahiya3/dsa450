@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
+class SolutionBeauty {
     public int[] getSubarrayBeautyBruteForce(int[] nums, int k, int x) {
         ArrayList<Integer> res=new ArrayList<>();
         int l=nums.length;
