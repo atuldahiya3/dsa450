@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-class Solution2 {
+class Solution3 {
     public boolean isAnagram(String s, String t) {
         int LS=s.length();
         int LT=t.length();
