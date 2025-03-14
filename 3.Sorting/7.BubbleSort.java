@@ -1,4 +1,4 @@
-class Solution {
+class Solution5 {
     // Function to sort the array using bubble sort algorithm.
     public static void bubbleSort(int arr[]) {
         int n=arr.length;
