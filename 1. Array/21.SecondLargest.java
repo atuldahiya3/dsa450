@@ -1,4 +1,4 @@
-public class Solution {
+public class Solution2 {
     public int getSecondLargest(int[] arr) {
         // Code Here
         int largest=Integer.MIN_VALUE;
