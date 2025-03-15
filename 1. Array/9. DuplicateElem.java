@@ -1,9 +1,9 @@
-import java.util.Set;
+import java.util.HashSet;
 
 class Solution {
     public int findDuplicate(int[] nums) {
         int repetitive=0;
-        Set<Integer> temp=new HashSet<>();
+        HashSet<Integer> temp=new HashSet<>();
         for(int i=0; i<nums.length; i++){
             int l=temp.size();
             temp.add(nums[i]);
