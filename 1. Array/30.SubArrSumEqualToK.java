@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-class Solution31 {
+class Solution30 {
     public int longestSubarray(int[] arr, int k) {
         HashMap<Integer,Integer> prefixSum=new HashMap<>();
         int sum=0;
