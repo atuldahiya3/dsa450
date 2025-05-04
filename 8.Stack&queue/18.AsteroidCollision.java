@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 class Solution18 {
     public int[] asteroidCollision(int[] asteroids) {
         Stack<Integer> stack= new Stack<>();
