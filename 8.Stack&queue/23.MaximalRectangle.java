@@ -28,7 +28,7 @@ class Solution23 {
             while(!stack.isEmpty() && h< nums[stack.peek()]){
                 int height=nums[stack.pop()];
                 int width= stack.isEmpty() ? i : i-stack.peek()-1;
-                maxArea= Math.max(maxArea, height*width);
+                maxArea= Math.max(maxArea, height*width);   
             }
             stack.push(i);
         }
