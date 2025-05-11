@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-class Solution {
+class Solution63 {
     public int numSubarraysWithSum(int[] nums, int goal) {
         // HashMap to store the frequency of prefix sums
         HashMap<Integer, Integer> map = new HashMap<>();
