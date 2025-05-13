@@ -1,4 +1,4 @@
-class Solution {
+class Solution25 {
     public int numberOfSubstrings(String s) {
         int[] abc= new int[3];
         for(int i=0;i<abc.length;i++){
