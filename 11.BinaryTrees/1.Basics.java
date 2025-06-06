@@ -22,10 +22,20 @@ class basics{
             return newNode;
         }
     }
+    public static void preorder(Node root){
+        if(root==null){
+            // System.out.print("-1 ");
+            return;
+        }
+        System.out.print(root.data+" ");
+        preorder(root.left);
+        preorder(root.right);
+    }
     public static void main(String[] args){
         int[] data={1, 2, 4, -1,-1, 5, -1, -1, 3, -1, 6, -1, -1};
         BinaryTree tree=new BinaryTree();
         Node root= tree.buildTree(data);
         System.out.println("Binary Tree created with root value: " + root.data);
+        preorder(root);
     }
 }
