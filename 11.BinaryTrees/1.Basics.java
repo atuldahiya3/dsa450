@@ -76,9 +76,45 @@ class basics{
     }
     public static int sumNodes(Node root){
         if(root==null) return 0;
-        int leftNode=countNodes(root.left);
-        int rightNode=countNodes(root.right);
-        return leftNode+rightNode+1;
+        int leftNode=sumNodes(root.left);
+        int rightNode=sumNodes(root.right);
+        return leftNode+rightNode+root.data;
+    }
+    public static int heightOfTree(Node root){
+        Queue<Node> q= new LinkedList<>();
+        q.add(root);
+        q.add(null);
+        int count=0;
+        while(!q.isEmpty()){
+            Node currNode=q.poll();
+            if(currNode==null){
+                System.out.println("");
+                count++;
+                if(!q.isEmpty()){
+                    q.add(null);
+                }
+            }else{
+                System.out.print(currNode.data+" ");
+                if(currNode.left!=null) q.add(currNode.left);
+                if(currNode.right!=null) q.add(currNode.right);
+            }
+        }
+        return count;
+    }
+    public static int height(Node root){
+        if(root==null) return 0;
+        int leftHeight= height(root.left);
+        int rightHeight=height(root.right);
+        int maxHeight=Math.max(leftHeight,rightHeight)+1;
+        return maxHeight;
+    }
+    public static int diameter(Node root){
+        if(root==null) return 0;
+        int leftDiamater= diameter(root.left);
+        int rightDiameter=diameter(root.right);
+        int maxHeight=height(root.left)+height(root.right)+1;
+        return Math.max(maxHeight, Math.max(leftDiamater, rightDiameter));
+
     }
     public static void main(String[] args){
         int[] data={1, 2, 4, -1,-1, 5, -1, -1, 3, -1, 6, -1, -1};
@@ -90,6 +126,10 @@ class basics{
         // postorder(root);
         levelOrder(root);
         System.out.println("Total number of nodes in the tree: " + countNodes(root));
+        System.out.println("Sum of all nodes in the tree: " + sumNodes(root));
+        System.out.println("Height of the tree: " + heightOfTree(root));
+        System.out.println("Height of the tree using recursive method: " + height(root));
+        System.out.println("Diameter of the tree: " + diameter(root));
     }
     
 }
