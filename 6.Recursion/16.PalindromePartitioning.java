@@ -10,6 +10,7 @@ class Solution {
             return;
         }
         for(int end=start+1;end<=s.length();end++){
+            String subStr=s.substring(start,end);
             if(isPalindrome(subStr)){
                 pairs.add(subStr);
                 findPairs(s, end, pairs, res);
