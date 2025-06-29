@@ -1,4 +1,4 @@
-class Solution {
+class Solution4 {
     public int findCircleNum(int[][] isConnected) {
         int v=isConnected.length;
         boolean[] visited= new boolean[v];

@@ -1,5 +1,6 @@
+import java.util.ArrayList;
 
-class Solution {
+class Solution111 {
     public ArrayList<ArrayList<Integer>> getComponents(int V, int[][] edges) {
         // code here
         ArrayList<ArrayList<Integer>> adj= new ArrayList<>();

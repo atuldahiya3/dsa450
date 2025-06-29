@@ -1,4 +1,8 @@
-class Solution {
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
+class Solution2 {
     // Function to return Breadth First Search Traversal of given graph.
     public ArrayList<Integer> bfs(ArrayList<ArrayList<Integer>> adj) {
         // code here

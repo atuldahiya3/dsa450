@@ -1,4 +1,6 @@
-class Solution {
+import java.util.ArrayList;
+
+class Solution1 {
     // Function to return a list containing the DFS traversal of the graph.
     public ArrayList<Integer> dfs(ArrayList<ArrayList<Integer>> adj) {
         // Code here

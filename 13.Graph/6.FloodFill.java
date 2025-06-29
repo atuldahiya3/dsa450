@@ -1,4 +1,7 @@
-class Solution {
+import java.util.LinkedList;
+import java.util.Queue;
+
+class Solution6 {
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
         int originalColor = image[sr][sc];
         if (originalColor == color) return image; 
