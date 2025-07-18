@@ -1,4 +1,4 @@
-class Solution {
+class Solution11 {
     int minCost(int[] height) {
         // code here
         int n=height.length-1;
