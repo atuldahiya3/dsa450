@@ -1,3 +1,7 @@
+
+import java.util.ArrayList;
+import java.util.Collections;
+
 class Solution {
     public ArrayList<ArrayList<Integer>> getComponents(int V, int[][] edges) {
         // code here
