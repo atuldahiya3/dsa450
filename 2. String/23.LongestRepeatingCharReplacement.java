@@ -1,4 +1,4 @@
-import java.util.HashMap;
+   import java.util.HashMap;
 
 class Solution {
     public int characterReplacement(String s, int k) {
